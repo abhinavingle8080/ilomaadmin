@@ -54,21 +54,21 @@ export default function TeamOperation() {
   }, [id]);
 
   return (
-    <Page title={`${name} ${title}`}> // Adjusted page title
+    <Page title={`${name} ${title}`}>
       <Container maxWidth={themeStretch ? false : 'lg'}>
         <HeaderBreadcrumbs
           heading={heading}
           links={[
             { name: 'Dashboard', href: '/admin/dashboard' },
-            { name: `${mainTitle}`, href: '/admin/teams' }, // Adjusted breadcrumb link
+            { name: `${mainTitle}`, href: '/admin/teams' },
             { name: `${name} ${title}` },
           ]}
         />
 
         {isView ? (
-          <ViewTeam details={data} /> // Adjusted component import
+          <ViewTeam details={data} />
         ) : (
-          <TeamForm isEdit={isEdit} data={data} /> // Adjusted component import
+          <TeamForm isEdit={isEdit} data={data} />
         )}
       </Container>
     </Page>

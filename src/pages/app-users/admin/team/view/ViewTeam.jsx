@@ -34,7 +34,7 @@ export default function ViewTeam({ details, logs }) { // Adjusted component name
     ];
 
     return (
-        <Page title="View Team"> // Adjusted page title
+        <Page title="View Team">
             <Card sx={{ mb: 3 }}>
                 <Container maxWidth={themeStretch ? false : 'lg'}>
                     <Tabs
